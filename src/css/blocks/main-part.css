@@ -1,0 +1,29 @@
+.main-part {
+    background-color: transparent;
+}
+
+.main-part__header {
+    display: none;
+}
+
+.main-part__content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+@media (min-width: 768px) {
+    .main-part {
+        background-image: url(../../img/yellow-layer.png);
+    }
+    .main-part__header {
+        display: block;
+        color: white;
+        text-transform: uppercase;
+    } 
+
+    .main-part__content {
+        flex-direction: row;
+    }
+ }
+

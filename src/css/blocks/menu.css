@@ -1,0 +1,40 @@
+.menu {
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    display: flex;
+    justify-content: stretch;
+}
+
+.menu__item {
+    height: 100%;
+    color: white;
+    flex: 1;
+    border-right: 0.1em solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__item:last-child {
+    border: none;
+}
+
+.menu__link {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu__link::before {
+    display: inline-block;
+    color: rgb(160, 159, 159);
+    opacity: 0.4;
+    font-size: 1.4em;
+    padding-right: 0.5em;
+}
+
+@media (min-width: 768px) {
+    .menu {
+        box-shadow: -5px -5px 2px rgb(214, 150, 30) ;
+    }
+}

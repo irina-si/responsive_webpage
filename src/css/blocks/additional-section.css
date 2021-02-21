@@ -1,0 +1,26 @@
+.additional-section {
+    background-color: grey;
+}
+
+.additional-section__header {
+    color: yellow;
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: center;
+    padding: 1em;
+}
+
+.additional-section__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.additional-section__list {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .additional-section__list {
+        display: block;
+    }
+}

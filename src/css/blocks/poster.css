@@ -1,0 +1,19 @@
+.poster {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    font-size: 2em;
+    padding: 0 5px;
+}
+
+.poster__text {
+    color: white;
+    background-color: orange;
+    flex: 1;
+    margin: 0 5px;
+}
+
+.poster__video {
+    flex: 1;
+    margin: 0 5px;
+}
