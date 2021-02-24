@@ -1,24 +1,40 @@
 .logo {
     display: flex;
     padding: 3px;
-    justify-content: center;
+    justify-content: stretch;
+    align-items: center;
 }
 
 .logo__img {
-    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+.logo__text {
+    text-transform: uppercase;
+    color: white;
+    font-size: 3vw;
+    line-height: 1vw;
 }
 
 .logo__author {
     display: none;
 }
 
+.logo__text-container {
+    display: flex;
+    align-items: baseline;
+}
+
 @media (min-width: 768px) {
+    .logo__text {
+        font-size: 4em;
+    }
+
     .logo__author {
-        display: block;
-        align-self: flex-end;
+        display: inline-block;
         color: white;
         text-transform: uppercase;
-        flex: 1;
-        flex-basis: 40%;
     } 
 }

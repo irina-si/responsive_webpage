@@ -13,7 +13,11 @@
 @import url('./blocks/middle-bar.css');
 @import url('./blocks/main-part.css');
 @import url('./blocks/poster.css');
-@import url('./blocks/additional-section.css');
+@import url('./blocks/twitter.css');
+@import url('./blocks/rectang.css');
+@import url('./blocks/devices-part.css');
+@import url('./blocks/list.css');
+@import url('./blocks/footer.css');
 
 /* Классы шрифтов (если SCSS - переменные)*/
 .asapFont {font-family: 'Asap', sans-serif;}
@@ -37,17 +41,21 @@ body {
     min-width: 320px;
 }
 
+/* Для jquery.ellipsis.js */
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.ellipsis.multiline {
+    white-space: normal;
+}
+
 @media (min-width: 768px) {
     .container {
-        width: 80%;
+        max-width: 1024px;
         margin: auto;
     }
-
-    .header-background {
-        background-image: url(../img/header_layer.png);
-    }
-
-
 }
 
 

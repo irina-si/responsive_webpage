@@ -1,19 +1,36 @@
 .poster {
     display: flex;
-    justify-content: space-around;
     background-color: white;
     font-size: 2em;
-    padding: 0 5px;
+    height: 233px;
+    margin: 9px 0px;
 }
 
 .poster__text {
     color: white;
+    padding: 25px 38px 34px 31px;
+    margin: 0px 9px;
+    font-weight: 300;
+    font-size: 2vw;
     background-color: orange;
     flex: 1;
-    margin: 0 5px;
 }
 
 .poster__video {
     flex: 1;
-    margin: 0 5px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: auto;
+    margin: auto; 
+}
+
+@media (min-width: 768px) {
+    .poster {
+        padding: 0 0px; 
+        margin: 0px;
+    }
+
+    .poster__text {
+        margin: 0px;
+    }
 }

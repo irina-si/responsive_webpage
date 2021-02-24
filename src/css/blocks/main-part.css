@@ -6,24 +6,42 @@
     display: none;
 }
 
-.main-part__content {
+.main-part__body {
     display: flex;
     flex-direction: column;
     align-items: stretch;
 }
 
+.main-part__twitter {
+    margin-top: 9px;
+}
+
 @media (min-width: 768px) {
     .main-part {
         background-image: url(../../img/yellow-layer.png);
+        padding-bottom: 170px;
     }
     .main-part__header {
         display: block;
         color: white;
         text-transform: uppercase;
+        font-size: 3vw;
+        padding: 32px 0;
     } 
 
-    .main-part__content {
+    .main-part__body {
         flex-direction: row;
     }
+
+    .main-part__twitter {
+        margin-top: 0px;
+        margin-left: auto;
+        flex-basis: 32%;
+    }
+    
+    .main-part__poster {
+        flex-basis: 64%;
+    }
+
  }
 

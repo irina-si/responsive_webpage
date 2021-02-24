@@ -5,74 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.ellipsis.js"></script>
+    <script type="text/javascript">
+        $(".ellipsis").ellipsis();
+    </script>
     <title>Document</title>
 </head>
 <body>
-    <div class='header-background'>
-        <header>
-            <div class="container">
-                <div class="header">
-                    <div class='header__logo logo'>
-                        <a class='logo__img' href="#"><img src="./img/logo+name.png" alt="logo"></a>
-                        <author class='logo__author'>craft by css author.com</author>
-                    </div>
-                    <nav class="header__menu">
-                        <ul class='menu'>
-                            <li class='menu__item'><a class='menu__link ptSansFont icon-user' href="#">About us</a></li>
-                            <li class='menu__item'><a class='menu__link ptSansFont icon-wrench' href="#">Services</a></li>
-                            <li class='menu__item'><a class='menu__link ptSansFont icon-mail-envelope-closed' href="#">Contacts</a></li>
-                        </ul>  
-                    </nav> 
-                </div>  
-            </div> 
-        </header>
-        <div class='player-section container'>
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class='header__logo'>
+                    <a class='logo' href="#">
+                        <img class="logo__image" src="./img/Logo.svg" alt="logo">
+                        <div class='logo__text-container'>
+                            <span class="logo__text robotoCondensedFont">theyalow</span>
+                            <author class='logo__author'>craft by css author.com</author>
+                        </div>
+                    </a>
+                </div>
+                <nav class="header__menu">
+                    <ul class='menu'>
+                        <li class='menu__item'><a class='menu__link encodeFont icon-user' href="#">About us</a></li>
+                        <li class='menu__item'><a class='menu__link encodeFont icon-wrench' href="#">Services</a></li>
+                        <li class='menu__item'><a class='menu__link encodeFont icon-mail-envelope-closed' href="#">Contacts</a></li>
+                    </ul>  
+                </nav> 
+            </div>  
+        </div> 
+    </header>
+    <section class="player-section">
+        <div class="player-section__content container">
             <div class='player-section__player'>
                 <div class="player">
                     <iframe class="player__video" src="https://www.youtube.com/embed/fn_JrXerhUg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class='player-section__header'>
+            <div class='player-section__header asapFont'>
                 <span>the cool</span>
                 <span>the minimal</span>
             </div>
         </div>
-    </div>
-    <div class='middle-bar container'>
-        <div class='middle-bar__item icon-cloud-download'>better design</div>
-        <div class='middle-bar__item icon-leaf'>customise</div>
-        <div class='middle-bar__item icon-paper-plane'>it's free</div> 
-    </div>
+    </section>
+    <section class='middle-bar container'>
+        <div class='middle-bar__item icon-cloud-download ptSansFont'>better design</div>
+        <div class='middle-bar__item icon-leaf ptSansFont'>customise</div>
+        <div class='middle-bar__item icon-paper-plane ptSansFont'>it's free</div> 
+    </section>
     <main class='main-part'>
-        <h1 class="main-part__header">lorem ipsum dolor sit amet</h1>
-        <div class="main-part__content">
-            <div class="poster">
-                <div class='poster__text'>Lorem ipsum dolor sit amet, consectetur adipisicing, sed ut perspiciatis unde omnis</div> 
-                <div class='poster__video'><video></video></div>
+        <div class="main-part__content container">
+            <h1 class="main-part__header ptSansFont">lorem ipsum dolor sit amet</h1>
+            <div class="main-part__body">
+                <div class="poster main-part__poster">
+                    <div class='poster__text ellipsis multiline encodeFont'>
+                        <span class="text__container">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        </span>
+                    </div> 
+                    <div class='poster__video'>
+                        <video controls poster="https://html5book.ru/wp-content/themes/papercuts/video/martynko.png" preload="none">
+                            <source src="https://cache-igi.cdnvideo.ru/igi/video/2021/2/23/%D0%BD%D0%B0%D1%81%D0%B0%20%D0%BE%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0%D0%BB%D0%BE%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%20%D0%BF%D0%BE%D1%81%D0%B0%D0%B4%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%BC%D0%B0%D1%80%D1%81%20%D0%BD%D0%BE%D0%B2%D0%B5%D0%B9%D1%88%D0%B5%D0%B3%D0%BE%20%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%B0_2302_8c%D0%B0%D1%88%D0%B0_02-00.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="twitter main-part__twitter">
+                    <ul class="twitter__list">
+                        <li class='twitter__item rectang'>Daily Mobile UI Design Inspiration #1 via @cssauthor</li>
+                        <li class='twitter__item rectang'>Daily Mobile UI Design Inspiration #1 via @cssauthor</li>
+                        <li class='twitter__item rectang'>Daily Mobile UI Design Inspiration #1 via @cssauthor</li>
+                    </ul>
+                </div>
             </div>
-            <div class="twitter"></div>
         </div>
     </main>
-    <article class="additional-section">
-        <h1 class="additional-section__header container">lorem ipsum dolor sit amet</h1>
-        <div class="additional-section__content container">
-            <div class="additional-section__picture devices"><img src="./img/Devices.png" alt="devices" class="devices"></div>
-            <div class="additional-section__list">
-                <ul class="list">
-                    <li class="list__item">Sed ut perspiciatis unde omnis</li>
-                    <li class="list__item">Lorem ipsum dolor sit amet, consectetur adipisicing</li>
-                    <li class="list__item">Sed ut perspiciatis unde omnis</li>
-                    <li class="list__item">Lorem ipsum dolor sit amet, consectetur adipisicing</li>
-                </ul>
+    <section class="devices-part">
+        <div class="devices-part__content container">
+            <h1 class="devices-part__header ptSansFont">lorem ipsum dolor sit amet</h1>
+            <div class="devices-part__body">
+                <div class="devices-part__devices"><img src="./img/Devices.png" alt="devices" class="devices"></div>
+                <div class="devices-part__list">
+                    <ul class="list">
+                        <li class="list__item icon-circle openSansFont">Sed ut perspiciatis unde omnis</li>
+                        <li class="list__item icon-circle openSansFont">Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                        <li class="list__item icon-circle openSansFont">Sed ut perspiciatis unde omnis</li>
+                        <li class="list__item icon-circle openSansFont">Lorem ipsum dolor sit amet, consectetur adipisicing</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        </div>
-    </article>
+    </section>
     <footer class='footer'>
-        <div class='footer-logo'>
-            <a class='logo' href="#"><img src="./img/logo+name.png" alt="logo"></a>
+        <div class="footer__container container">
+            <div class='footer__logo logo'>
+                <a class='logo__img' href="#">
+                    <img src="./img/Logo.svg" alt="logo">
+                    <span class="logo__text robotoCondensedFont">theyalow</span>
+                </a> 
+            </div>
+            <author class='footer__author openSansFont'>Designed by css.author.com</author> 
         </div>
-        <author class='footer__author'>designed by css.author.com</author>
     </footer>
 </body>
 </html>
