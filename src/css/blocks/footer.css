@@ -1,0 +1,47 @@
+.footer {
+    width: 100%;
+    background-color: rgb(94, 90, 90);
+    border-top: 3px solid rgb(66, 65, 65);
+    height: 40px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+}
+
+.footer__logo {
+    margin: auto;
+    height: 100%;
+}
+
+.footer__author {
+    display: none;
+    color: white;
+    font-size: 1.7rem;
+} 
+
+@media (min-width: 768px) {
+    .footer {
+        height: 60px;
+    }
+
+    .footer__container::before {
+        content: ''; 
+        flex: 1;
+    }
+
+    .footer__logo {
+        flex: 1;
+    }
+
+    .footer__author {
+        display: inline-block; 
+        flex: 1;
+        text-align: end;
+    }
+} 
+
+

@@ -1,0 +1,22 @@
+.player {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 10px; 
+    height: 0;
+    overflow: hidden;
+    display: block;
+}
+
+.player__video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+@media (min-width: 768px) {
+    .player {
+        padding-top: 30px; 
+    }
+}

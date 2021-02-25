@@ -1,0 +1,10 @@
+.rectang {
+    float: left;
+    background: white;
+    opacity: 0.8;
+    padding: 1em 1.5em;
+    border-radius: 1em;
+    position: relative;
+    line-height: 1.5em;
+    font-size: calc(9px + 4 *((100vw - 320px) / (640 - 320)));
+  }

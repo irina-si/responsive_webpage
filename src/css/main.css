@@ -1,0 +1,59 @@
+/* Подключаем шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Encode+Sans+Semi+Expanded:wght@300;400&family=Lato&family=Open+Sans&family=PT+Sans&family=PT+Sans+Narrow:wght@700&family=Roboto+Condensed:ital@1&display=swap');
+
+/*Подключаем Icomoon */
+@import url('./../fonts/icomoon/style.css');
+
+/* Подключаем CSS-стили классов*/
+@import url('./blocks/header.css');
+@import url('./blocks/menu.css');
+@import url('./blocks/logo.css');
+@import url('./blocks/player-section.css');
+@import url('./blocks/player.css');
+@import url('./blocks/middle-bar.css');
+@import url('./blocks/main-part.css');
+@import url('./blocks/poster.css');
+@import url('./blocks/twitter.css');
+@import url('./blocks/rectang.css');
+@import url('./blocks/devices-part.css');
+@import url('./blocks/list.css');
+@import url('./blocks/footer.css');
+
+/* Классы шрифтов (если SCSS - переменные)*/
+.asapFont {font-family: 'Asap', sans-serif;}
+.encodeFont {font-family: 'Encode Sans Semi Expanded', sans-serif;}
+.latoFont {font-family: 'Lato', sans-serif;}
+.openSansFont {font-family: 'Open Sans', sans-serif;}
+.ptSansFont {font-family: 'PT Sans', sans-serif;}
+.ptSansNarrowFont {font-family: 'PT Sans Narrow', sans-serif;}
+.robotoCondensedFont {font-family: 'Roboto Condensed', sans-serif;}
+
+/* Общие стили */
+
+
+body {
+    min-width: 320px;
+}
+
+/* Медиазапросы по шрифтам */
+
+@media (min-width: 992px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .container {
+        max-width: 1024px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 992px) {
+    html {
+        font-size: calc(62.5% - 1.5px);
+    }
+}
+
+
+
+     

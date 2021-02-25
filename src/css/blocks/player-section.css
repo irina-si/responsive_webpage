@@ -1,0 +1,44 @@
+.player-section__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-section__player {
+    flex: 1;
+}
+
+.player-section__header {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .player-section {
+        background-image: url(../../img/header_layer.png);
+        background-size: cover;
+        margin-top: -140px;
+        padding-top: 165px;
+        padding-bottom: 70px;
+    }
+
+   .player-section__header {
+        flex: 1;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 6.3rem;
+        font-family: "Asap";
+        color: rgb(245, 197, 6);
+        line-height: 1.2;
+    } 
+
+    .player-section__header span:last-child {
+        color:white;
+    }
+}
+

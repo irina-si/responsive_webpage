@@ -1,0 +1,48 @@
+.middle-bar__container {
+    background-image: url(../../img/middle_bar_background.png);
+    background-size: cover;  
+}
+
+.middle-bar {
+    width: 100%;
+    height: 174px;
+    display: flex;
+    justify-content: stretch;
+}
+
+.middle-bar__item {
+    height: 100%;
+    color: black;
+    font-size: calc(11px + 12 *((100vw - 320px) / (640 - 320)));
+    line-height: 1.2;
+    text-transform: uppercase;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-bar__item:before {
+    display: inline-block;
+    color: #f5c506;
+    opacity: 1;
+    font-size: 3em;
+}
+
+@media (min-width: 768px) {
+    .middle-bar {
+        height: 216px;
+    }  
+
+    .middle-bar__item {
+        font-size: 2.7rem;
+    }
+    
+    .middle-bar__item:before {
+        font-size: 4em;
+        margin-bottom: 7px;
+    }
+}
+
+  
