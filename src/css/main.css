@@ -28,38 +28,32 @@
 .ptSansNarrowFont {font-family: 'PT Sans Narrow', sans-serif;}
 .robotoCondensedFont {font-family: 'Roboto Condensed', sans-serif;}
 
-/* Проверка иконок */
-.icon::before {
-    color: grey;
-    opacity: 0.4;
-    display: inline-block;
-    font-size: 65px;
-}
+/* Общие стили */
+
 
 body {
-    font-size: 0.6em;
     min-width: 320px;
 }
 
-/* Для jquery.ellipsis.js */
-.ellipsis {
-    white-space: nowrap;
-    overflow: hidden;
-}
+/* Медиазапросы по шрифтам */
 
-.ellipsis.multiline {
-    white-space: normal;
-}
+@media (min-width: 992px) {
+    html {
+        font-size: 62.5%;
+    }
 
-@media (min-width: 768px) {
     .container {
         max-width: 1024px;
         margin: auto;
     }
 }
 
+@media (min-width: 640px) and (max-width: 992px) {
+    html {
+        font-size: calc(62.5% - 1.5px);
+    }
+}
 
 
 
-
-
+     

@@ -12,8 +12,13 @@
     align-items: stretch;
 }
 
+.main-part__poster {
+    margin-right: calc(2px + 4 *((100vw - 320px) / (640 - 320)));
+    margin-left: calc(2px + 4 *((100vw - 320px) / (640 - 320)));
+}
+
 .main-part__twitter {
-    margin-top: 9px;
+    margin-top: calc(4px + 5 *((100vw - 320px) / (640 - 320)));
 }
 
 @media (min-width: 768px) {
@@ -25,7 +30,8 @@
         display: block;
         color: white;
         text-transform: uppercase;
-        font-size: 3vw;
+        font-size: 3.7rem;
+        line-height: 1.2;
         padding: 32px 0;
     } 
 
@@ -42,6 +48,4 @@
     .main-part__poster {
         flex-basis: 64%;
     }
-
  }
-

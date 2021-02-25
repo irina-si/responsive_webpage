@@ -6,25 +6,5 @@
     border-radius: 1em;
     position: relative;
     line-height: 1.5em;
-  }
-  
-  .rectang::after, .rectang::before {
-    content: "";
-    position: absolute;
-    left: 100%;
-    bottom: .5em;
-    width: 1.8em;
-    height: 1.8em;
-    border: .5em solid white;
-    border-radius: 50%;
-    background: blue;
-  }
-  
-  .rectang::before {
-    border-top: none;
-    height: .9em;
-    border-radius: 0 0 50% 50% / 0 0 100% 100%;
-    background: silver;
-    border-color: silver;
-    margin-left: -.9em;
+    font-size: calc(9px + 4 *((100vw - 320px) / (640 - 320)));
   }
